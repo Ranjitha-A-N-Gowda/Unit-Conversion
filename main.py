@@ -24,18 +24,18 @@ label_type = ttk.Label(root, text="Conversion Type:")
 label_type.grid(row=0,column=0)
 types = ["Centimeter to Meter", "Meter to Centimeter","Centimeter to Feet","Feet to Inches","Mile to Kilometre","Sqft to Sqmtrs","Sqft to Acres/Hectres"]
 optiontype = ttk.Combobox(root, values=types)
-optiontype.grid(row=0, column=1)
+optiontype.grid(row=0,column=1)
 
 # For entering the value
 label_value = ttk.Label(root, text="Enter Value:")
-label_value.grid(row=2, column=0,padx=10,pady=10)
+label_value.grid(row=2,column=0,padx=10,pady=10)
 
 entry_value = ttk.Entry(root)
-entry_value.grid(row=2, column=1,padx=10,pady=10)
+entry_value.grid(row=2,column=1,padx=10,pady=10)
 
 # Button
 convert_button = ttk.Button(root, text="Convert", command=convert_length)
-convert_button.grid(row=3,,padx=10,pady=10)
+convert_button.grid(row=3,padx=10,pady=10)
 
 # Result
 result_label = ttk.Label(root, text="Result: ")
